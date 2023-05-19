@@ -14,12 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
-Route::get('/customers', 'CustomerController@index');
-Route::post('/customers', 'CustomerController@store');
-Route::get('/customers/{id}', 'CustomerController@show');
-Route::put('/customers/{id}', 'CustomerController@update');
-Route::delete('/customers/{id}', 'CustomerController@destroy');
-Route::resource('customers', 'App\Http\Controllers\CustomerController');
+// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
+// Route::get('/customers', 'CustomerController@index');
+// Route::post('/customers', 'CustomerController@store');
+// Route::get('/customers/{id}', 'CustomerController@show');
+// Route::put('/customers/{id}', 'CustomerController@update');
+// Route::delete('/customers/{id}', 'CustomerController@destroy');
+// Route::resource('customers', 'App\Http\Controllers\CustomerController');

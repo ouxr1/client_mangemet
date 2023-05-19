@@ -8,4 +8,20 @@ use Illuminate\Database\Eloquent\Model;
 class Customer extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'full_name',
+        'email',
+        'phone_number',
+        'company_name',
+        'linkedin_profile',
+        'interested',
+        'Position',
+        'purchase',
+        'country'
+    ];
+        public function call()
+    {
+        return $this->hasMany(Call::class);
+    }
+
 }
